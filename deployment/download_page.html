@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDS Route Sequencer - Download Professional PDF Sequencing Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .download-section {
+            text-align: center;
+            background: #f8f9ff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border: 2px solid #667eea;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+
+        .download-info {
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .specs {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .specs h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .spec-item strong {
+            color: #667eea;
+            min-width: 150px;
+        }
+
+        .faq {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .faq h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .steps {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .steps h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .support {
+            background: #e7f3ff;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 40px;
+        }
+
+        .support h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .support p {
+            margin-bottom: 10px;
+        }
+
+        .support a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .support a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 HDS Route Sequencer</h1>
+            <p>Professional PDF Route Sequencing & Merging Application</p>
+        </div>
+
+        <div class="content">
+            <!-- Download Section -->
+            <div class="download-section">
+                <h2>⬇️ Download Latest Version</h2>
+                <a href="HDS_Route_Sequencer_Setup.exe" class="download-btn">
+                    📥 Download Installer (v1.0.0)
+                </a>
+                <div class="download-info">
+                    <p><strong>Size:</strong> ~80-100 MB</p>
+                    <p><strong>Platform:</strong> Windows 7 SP1+</p>
+                    <p><strong>Latest Release:</strong> May 26, 2026</p>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🎯 Smart Detection</h3>
+                    <p>Automatically detects route numbers and delivery codes from PDF documents</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Fast Processing</h3>
+                    <p>Processes multiple PDFs in batch with intelligent sequencing</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Professional Interface</h3>
+                    <p>Clean, modern GUI with drag-and-drop support</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Detailed Reports</h3>
+                    <p>Real-time progress tracking and comprehensive statistics</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📁 Easy Output</h3>
+                    <p>Automatically saves to Downloads folder with timestamped filenames</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Secure & Private</h3>
+                    <p>All processing done locally - no files uploaded to any server</p>
+                </div>
+            </div>
+
+            <!-- How to Install -->
+            <div class="steps">
+                <h3>📝 Installation Steps</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>Download the Installer</strong>
+                        <p>Click the download button above to get HDS_Route_Sequencer_Setup.exe</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>Run the Installer</strong>
+                        <p>Double-click the downloaded file to start the installation wizard</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>Follow the Wizard</strong>
+                        <p>Select installation location and click Install</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <strong>Launch Application</strong>
+                        <p>Find the shortcut in Start Menu or on your Desktop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="specs">
+                <h3>💻 System Requirements</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <strong>Minimum:</strong>
+                        <span>Windows 7 SP1 or newer</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Disk Space:</strong>
+                        <span>500 MB free</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>RAM:</strong>
+                        <span>1 GB minimum, 2 GB recommended</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Processor:</strong>
+                        <span>Dual-core, any modern CPU</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Python Required:</strong>
+                        <span>NO - Included in installer</span>
+                    </div>
+                    <div class="spec-item">
+                        <strong>Recommended OS:</strong>
+                        <span>Windows 10 or Windows 11</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq">
+                <h3>❓ Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <strong>Q: Do I need Python installed?</strong>
+                    <p>No! Python is included in the installer. You just need to run the setup and everything is included.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: What formats does it support?</strong>
+                    <p>The application works with PDF files containing picking slips (R D format) or delivery dockets (Route No. format).</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: Where are the output files saved?</strong>
+                    <p>By default, all merged PDFs are automatically saved to your Downloads folder (C:\Users\YourName\Downloads).</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: Can I use it on multiple computers?</strong>
+                    <p>Yes! You can install it on any Windows computer. Each installation can be used independently.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: Is my data private?</strong>
+                    <p>Absolutely. All processing happens on your computer locally. No files are uploaded to any server.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: How do I uninstall?</strong>
+                    <p>Go to Control Panel > Programs > Programs and Features, find "HDS Route Sequencer", and click Uninstall.</p>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="support">
+                <h3>🆘 Need Help?</h3>
+                <p><strong>📧 Email Support:</strong> <a href="mailto:support@yourcompany.com">support@yourcompany.com</a></p>
+                <p><strong>🌐 Website:</strong> <a href="https://yourcompany.com">https://yourcompany.com</a></p>
+                <p><strong>📞 Phone:</strong> +1 (555) 123-4567</p>
+                <p style="margin-top: 15px;"><a href="https://yourcompany.com/troubleshooting">View Troubleshooting Guide</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Your Company Name. All rights reserved. | <a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
