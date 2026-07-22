@@ -1,0 +1,103 @@
+HDS ROUTE SEQUENCER - SOFTWARE LICENSE AGREEMENT
+
+Version 1.0.0
+Date: May 26, 2026
+
+================================================================================
+GRANT OF LICENSE
+================================================================================
+
+This is a license agreement ("License") between you (either an individual or a single entity) and Your Company Name for the software known as "HDS Route Sequencer" (the "Software").
+
+By installing or using this Software, you agree to be bound by the terms of this License. If you do not agree to abide by the above, please do not install or use this Software.
+
+================================================================================
+LICENSE RIGHTS
+================================================================================
+
+You are granted a limited, non-exclusive, non-transferable license to:
+
+1. Install and use this Software on a single computer at a time
+2. Make one archival copy for backup purposes
+3. Use the Software for lawful business purposes
+
+================================================================================
+RESTRICTIONS
+================================================================================
+
+You may NOT:
+
+1. Modify, translate, or create derivative works based on the Software
+2. Reverse engineer, decompile, or disassemble the Software
+3. Rent, lease, or lend the Software
+4. Transfer, assign, or sublicense your rights to the Software
+5. Remove or alter any proprietary notices or labels
+6. Use the Software for unlawful purposes or in violation of any laws
+
+================================================================================
+INTELLECTUAL PROPERTY
+================================================================================
+
+The Software is licensed, not sold. You acknowledge that no title to the intellectual property in the Software is transferred to you. All title and rights to the Software remain the exclusive property of Your Company Name.
+
+================================================================================
+WARRANTY DISCLAIMER
+================================================================================
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL YOUR COMPANY NAME BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR RELATED TO THIS LICENSE OR THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+================================================================================
+LIMITATION OF LIABILITY
+================================================================================
+
+Your Company Name shall not be liable for any damages whatsoever arising from:
+
+1. Loss of data or profits
+2. Business interruption
+3. Computer failures or malfunctions
+4. Errors or omissions in the Software
+5. Any other cause beyond the control of Your Company Name
+
+================================================================================
+TERMINATION
+================================================================================
+
+This License is effective until terminated. Your rights under this License will terminate automatically without notice from Your Company Name if you fail to comply with any terms of this License.
+
+Upon termination, you must destroy all copies of the Software in your possession.
+
+================================================================================
+GOVERNING LAW
+================================================================================
+
+This License shall be governed by and construed in accordance with the laws of the jurisdiction in which Your Company Name is located, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+
+================================================================================
+ENTIRE AGREEMENT
+================================================================================
+
+This License constitutes the entire agreement between you and Your Company Name regarding the Software and supersedes all prior agreements and understandings, whether written or oral.
+
+================================================================================
+MODIFICATIONS
+================================================================================
+
+Your Company Name reserves the right to modify this License at any time. Your continued use of the Software following the posting of revised License terms means that you accept and agree to the changes.
+
+================================================================================
+CONTACT
+================================================================================
+
+For questions regarding this License, please contact:
+
+Your Company Name
+Email: legal@yourcompany.com
+Website: https://yourcompany.com
+
+================================================================================
+
+By clicking "I Agree" during installation, you acknowledge that you have read this License, understand it, and agree to be bound by its terms and conditions.
+
+================================================================================
