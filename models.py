@@ -33,6 +33,7 @@ class PageInfo:
     doc_type: str = "UNKNOWN"
     is_continuation: bool = False
     text: str = ""
+    customer: Optional[str] = None
 
 
 @dataclass
@@ -67,14 +68,14 @@ class RouteInfo:
         """Detect duplicate and missing delivery numbers"""
         if not self.deliveries:
             return
-        
+
         sorted_deliveries = sorted(self.deliveries)
-        
+
         # Detect duplicates (more than one occurrence)
         from collections import Counter
         counts = Counter(self.deliveries)
         self.duplicate_deliveries = [d for d, c in counts.items() if c > 1]
-        
+
         # Detect missing
         if sorted_deliveries:
             for i in range(sorted_deliveries[0], sorted_deliveries[-1] + 1):
@@ -107,6 +108,12 @@ class ProcessingResult:
     validation_report: Optional[ValidationReport] = None
     error_message: Optional[str] = None
     warnings: List[str] = field(default_factory=list)
+    # Path to the human-readable stats/warnings report written alongside
+    # output_file (see PDFProcessor.write_processing_report). None if no
+    # report could be written.
+    report_file: Optional[str] = None
+    # Path to the machine-readable (JSON) twin of report_file, if written.
+    report_json_file: Optional[str] = None
 
 
 @dataclass
@@ -135,7 +142,7 @@ class DocumentError:
     delivery: Optional[int] = None
     message: str = ""
     pages: List[int] = field(default_factory=list)
-    
+
     def __str__(self) -> str:
         if self.route and self.delivery:
             return f"{self.severity}: Route {self.route}-{self.delivery}: {self.message}"
@@ -153,7 +160,7 @@ class ErrorReport:
     errors: List[DocumentError] = field(default_factory=list)
     has_critical_errors: bool = False
     has_warnings: bool = False
-    
+
     def add_error(self, error: DocumentError):
         """Add an error to the report"""
         self.errors.append(error)
